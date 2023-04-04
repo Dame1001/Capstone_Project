@@ -1,0 +1,29 @@
+::-webkit-input-placeholder {
+  color: #000;
+}
+
+:-moz-placeholder {
+  color: #000;
+}
+
+::-moz-placeholder {
+  color: #000;
+}
+
+:-ms-input-placeholder {
+  color: #000;
+}
+
+.navbar {
+  background-color: #46db6f;
+}
+.navbar input {
+  background-color: #2b8c47;
+}
+.navbar input [placeholder] {
+  color: #000;
+}
+
+#logo {
+  width: 4em;
+}/*# sourceMappingURL=header.component.css.map */
