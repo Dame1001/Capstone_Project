@@ -7,6 +7,11 @@ import { HomeComponent } from './components/home/home.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { SerieaPageComponent } from './components/seriea-page/seriea-page.component';
+import { PremierleaguePageComponent } from './components/premierleague-page/premierleague-page.component';
+import { LaligaPageComponent } from './components/laliga-page/laliga-page.component';
+import { BundesligaPageComponent } from './components/bundesliga-page/bundesliga-page.component';
+import { Ligue1PageComponent } from './components/ligue1-page/ligue1-page.component';
 
 
 @NgModule({
@@ -15,7 +20,12 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
     HomeComponent,
     HeaderComponent,
     FooterComponent,
-    SidebarComponent
+    SidebarComponent,
+    SerieaPageComponent,
+    PremierleaguePageComponent,
+    LaligaPageComponent,
+    BundesligaPageComponent,
+    Ligue1PageComponent
   ],
   imports: [
     BrowserModule,
