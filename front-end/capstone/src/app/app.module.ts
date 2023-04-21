@@ -1,5 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { CommonModule } from '@angular/common';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -7,11 +11,14 @@ import { HomeComponent } from './components/home/home.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
-import { SerieaPageComponent } from './components/seriea-page/seriea-page.component';
-import { PremierleaguePageComponent } from './components/premierleague-page/premierleague-page.component';
-import { LaligaPageComponent } from './components/laliga-page/laliga-page.component';
-import { BundesligaPageComponent } from './components/bundesliga-page/bundesliga-page.component';
-import { Ligue1PageComponent } from './components/ligue1-page/ligue1-page.component';
+import { PaginaSquadraComponent } from './components/pagina-squadra/pagina-squadra.component';
+import { CampionatoPageComponent } from './components/campionato-page/campionato-page.component';
+
+import { PaginaMagliaComponent } from './components/pagina-maglia/pagina-maglia.component';
+import { LoginComponent } from './components/login/login.component';
+import { RegisterComponent } from './components/register/register.component';
+
+
 
 
 @NgModule({
@@ -21,15 +28,18 @@ import { Ligue1PageComponent } from './components/ligue1-page/ligue1-page.compon
     HeaderComponent,
     FooterComponent,
     SidebarComponent,
-    SerieaPageComponent,
-    PremierleaguePageComponent,
-    LaligaPageComponent,
-    BundesligaPageComponent,
-    Ligue1PageComponent
+    PaginaSquadraComponent,
+    PaginaMagliaComponent,
+    CampionatoPageComponent,
+    LoginComponent,
+    RegisterComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule,
+    CommonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

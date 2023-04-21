@@ -1,0 +1,21 @@
+<div id="sezione-campionato">
+  <h1 class="text-dark mt-5">{{ campionato|uppercase }}</h1>
+  <img *ngIf="campionato == 'Serie A'" src="../../../assets/img/common-assets/Serie A.png" alt="Logo Serie A"/>
+  <img *ngIf="campionato == 'Premier League'" src="../../../assets/img/common-assets/Premier League.png" alt="Logo Premier League"/>
+  <img *ngIf="campionato == 'Bundesliga'" src="../../../assets/img/common-assets/Bundesliga.png" alt="Logo Bundesliga"/>
+  <img *ngIf="campionato == 'Liga Santander'" src="../../../assets/img/common-assets/La Liga.png" alt="Logo Liga Santander"/>
+  <img *ngIf="campionato == 'Ligue 1'" src="../../../assets/img/common-assets/Ligue 1.png" alt="Logo Ligue 1"/>
+
+  <div class="mt-5 container-fluid" id="sezione-squadre">
+    <div class="d-flex justify-content-center">
+      <div class="row d-flex justify-content-center">
+        <div class="squadre me-4 col-2 my-2" *ngFor="let e of squadre"  routerLink="../../{{campionato}}/{{e.nome}}">
+          <a class="text-dark text-decoration-none">
+            <img src="{{ e.logo }}" />
+            <p class="nome">{{ e.nome }}</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

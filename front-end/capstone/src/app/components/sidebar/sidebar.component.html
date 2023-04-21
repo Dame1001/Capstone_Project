@@ -1,8 +1,8 @@
-<div id="sidenav">
+<button class="btn btn-success" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+</button>
 
-  <div id="barra_ricerca_sidebar" class="ms-2">
-    <input type="text" placeholder="Cerca squadra..." class="barra_ricerca mt-3 rounded"/>
-  </div>
+<div class="collapse navbar-collapse"  id="navbarSupportedContent">
 
   <div id="nav">
     <div id="navinner">
@@ -10,116 +10,106 @@
       <div class="navsection mt-3 d-flex flex-column">
         <h5 class="fw-bold ps-2">CAMPIONATO</h5>
 
-        <a class="menu_sidebar mb-2 text-decoration-none text-dark ps-2" routerLink="seriea">
+        <a class="menu_sidebar mb-2 text-decoration-none text-dark ps-2" routerLink="campionato/Serie A">
           <img src="../../../assets/img/common-assets/Serie A.png" />
           <span class="ms-2">Serie A</span>
         </a>
 
-        <a class="menu_sidebar mb-2 text-decoration-none text-dark ps-2" routerLink="premierleague">
+        <a class="menu_sidebar mb-2 text-decoration-none text-dark ps-2" routerLink="campionato/Premier League">
           <img src="../../../assets/img/common-assets/Premier League.png" />
           <span class="ms-2">Premier League</span>
         </a>
 
-        <a class="menu_sidebar mb-2 text-decoration-none text-dark ps-2" routerLink="liga">
+        <a class="menu_sidebar mb-2 text-decoration-none text-dark ps-2" routerLink="campionato/Liga Santander">
           <img src="../../../assets/img/common-assets/La Liga.png" />
           <span class="ms-2">Liga Santander</span>
         </a>
 
-        <a class="menu_sidebar mb-2 text-decoration-none text-dark ps-2" routerLink="bundesliga">
+        <a class="menu_sidebar mb-2 text-decoration-none text-dark ps-2" routerLink="campionato/Bundesliga">
           <img src="../../../assets/img/common-assets/Bundesliga.png" />
           <span class="ms-2">Bundesliga</span>
         </a>
 
-        <a class="menu_sidebar mb-2 text-decoration-none text-dark ps-2" routerLink="ligue1">
+        <a class="menu_sidebar mb-2 text-decoration-none text-dark ps-2" routerLink="campionato/Ligue 1">
           <img src="../../../assets/img/common-assets/Ligue 1.png" />
           <span class="ms-2">Ligue 1</span>
         </a>
 
-        <a class="menu_sidebar mb-2 text-decoration-none text-dark ps-2" routerLink="nazionali">
-          <img src="../../../assets/img/common-assets/World Cup.png" />
-          <span class="ms-2">Nazionali</span>
-        </a>
       </div>
 
       <div class="nav-section mt-3 d-flex flex-column">
         <h5 class="fw-bold ps-2">SQUADRE</h5>
 
-        <a class="menu_sidebar mb-2 text-decoration-none text-dark ps-2" href="#">
+        <a class="menu_sidebar mb-2 text-decoration-none text-dark ps-2" routerLink="Liga Santander/FC Barcelona">
           <img src="../../../assets/img/common-assets/Barcelona.png" />
           <span class="ms-2">FC Barcelona</span>
         </a>
 
-        <a class="menu_sidebar mb-2 text-decoration-none text-dark ps-2" href="#">
+        <a class="menu_sidebar mb-2 text-decoration-none text-dark ps-2" routerLink="Liga Santander/Real Madrid">
           <img src="../../../assets/img/common-assets/Real Madrid.png" />
           <span class="ms-2">Real Madrid</span>
         </a>
 
-        <a class="menu_sidebar mb-2 text-decoration-none text-dark ps-2" href="#">
+        <a class="menu_sidebar mb-2 text-decoration-none text-dark ps-2" routerLink="Premier League/Manchester City">
           <img src="../../../assets/img/common-assets/Manchester city.png" />
           <span class="ms-2">Manchester City</span>
         </a>
 
-        <a class="menu_sidebar mb-2 text-decoration-none text-dark ps-2" href="#">
+        <a class="menu_sidebar mb-2 text-decoration-none text-dark ps-2" routerLink="Premier League/Manchester United">
           <img src="../../../assets/img/common-assets/Manchester utd.png" />
           <span class="ms-2">Manchester United</span>
         </a>
 
-        <a class="menu_sidebar mb-2 text-decoration-none text-dark ps-2" href="#">
+        <a class="menu_sidebar mb-2 text-decoration-none text-dark ps-2" routerLink="Premier League/Liverpool FC">
           <img src="../../../assets/img/common-assets/Liverpool.png" />
           <span class="ms-2">Liverpool FC</span>
         </a>
 
-        <a class="menu_sidebar mb-2 text-decoration-none text-dark ps-2" href="#">
+        <a class="menu_sidebar mb-2 text-decoration-none text-dark ps-2" routerLink="Ligue 1/Paris Saint-Germain">
           <img src="../../../assets/img/common-assets/PSG.png" />
           <span class="ms-2">Paris Saint-Germain</span>
         </a>
 
-        <a class="menu_sidebar mb-2 text-decoration-none text-dark ps-2" href="#">
+        <a class="menu_sidebar mb-2 text-decoration-none text-dark ps-2" routerLink="Premier League/Arsenal FC">
           <img src="../../../assets/img/common-assets/Arsenal.png" />
           <span class="ms-2">Arsenal FC</span>
         </a>
 
-        <a class="menu_sidebar mb-2 text-decoration-none text-dark ps-2" href="#">
+        <a class="menu_sidebar mb-2 text-decoration-none text-dark ps-2" routerLink="Serie A/Milan">
           <img src="../../../assets/img/common-assets/Milan.png" />
           <span class="ms-2">FC Milan</span>
         </a>
 
-        <a class="menu_sidebar mb-2 text-decoration-none text-dark ps-2" href="#">
+        <a class="menu_sidebar mb-2 text-decoration-none text-dark ps-2" routerLink="Ligue 1/Olympique Marseille">
           <img src="../../../assets/img/common-assets/Marsiglia.png" />
           <span class="ms-2">Olympique Marseille</span>
         </a>
 
-        <a class="menu_sidebar mb-2 text-decoration-none text-dark ps-2" href="#">
-          <img src="../../../assets/img/common-assets/Lione.png" />
-          <span class="ms-2">Olympique Lyonnais</span>
+        <a class="menu_sidebar mb-2 text-decoration-none text-dark ps-2" routerLink="Ligue 1/Bayern München">
+          <img src="../../../assets/img/loghi-bundes/Bayern Monaco.png" />
+          <span class="ms-2">Bayern München</span>
         </a>
 
-        <a class="menu_sidebar mb-2 text-decoration-none text-dark ps-2" href="#">
+        <a class="menu_sidebar mb-2 text-decoration-none text-dark ps-2" routerLink="Premier League/Tottenham Hotspur">
           <img src="../../../assets/img/common-assets/Tottenham.png" />
           <span class="ms-2">Tottenham Hotspur</span>
         </a>
 
-        <a class="menu_sidebar mb-2 text-decoration-none text-dark ps-2" href="#">
+        <a class="menu_sidebar mb-2 text-decoration-none text-dark ps-2" routerLink="Serie A/Napoli">
           <img src="../../../assets/img/common-assets/Napoli.png" />
           <span class="ms-2">Napoli</span>
         </a>
 
-        <a class="menu_sidebar mb-2 text-decoration-none text-dark ps-2" href="#">
+        <a class="menu_sidebar mb-2 text-decoration-none text-dark ps-2" routerLink="Liga Santander/Atlético Madrid">
           <img src="../../../assets/img/common-assets/Atletico Madrid.png" />
           <span class="ms-2">Atlético Madrid</span>
         </a>
 
-        <a class="menu_sidebar mb-2 text-decoration-none text-dark ps-2" href="#">
+        <a class="menu_sidebar mb-2 text-decoration-none text-dark ps-2" routerLink="Premier League/Chelsea FC">
           <img src="../../../assets/img/common-assets/Chelsea.png" />
           <span class="ms-2">Chelsea FC</span>
         </a>
       </div>
     </div>
-    </div>
-
-
-    <div class="user-section p-3 ms-0 sticky-bottom">
-      <img src="../../../assets/img/common-assets/profile-icon-png-910.png" />
-      <span class="ms-2">Nome Utente<!--fare chiamata per rendere nome utente--></span>
     </div>
   </div>

@@ -1,0 +1,28 @@
+<body>
+<div class="text-center">
+  <img id="logo" class="mt-4 mb-4" src="../../../assets/img/common-assets/logo.png" alt="logo">
+</div>
+<div class="wrapper">
+<div class="text-center mt-5">
+  <form #f="ngForm" (ngSubmit)="onSubmit(f)">
+    <h1 class="h3 mb-5 font-weight-normal text-white">Effettua il Login</h1>
+    <input type="email" ngModel name="email" id="email" class="form-control mb-3" placeholder="E-Mail" required autofocus>
+    <input type="password" ngModel name="password" id="password" placeholder="Password" class="form-control">
+    <div class="checkbox">
+      <label class="mt-2">
+        <input type="checkbox" value="ricordami"> Ricordami
+      </label>
+    </div>
+    <div class="mt-3">
+      <button type="submit"class="btn btn-lg btn-block btn-success text-white">Login</button>
+    </div>
+
+    <p class="mt-2 text-white">Non hai un account? <a routerLink="../signin">Registrati</a></p>
+  </form>
+</div>
+</div>
+<span class="ms-3">Foto di <a class="credit" href="https://unsplash.com/@guoshiwushuang?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Michael Lee</a> su <a class="credit" href="https://unsplash.com/it/foto/6J7eIvNwttQ?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+</span>
+</body>
+
+

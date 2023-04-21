@@ -1,19 +1,21 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
-import { SerieaPageComponent } from './components/seriea-page/seriea-page.component';
-import { PremierleaguePageComponent } from './components/premierleague-page/premierleague-page.component';
-import { LaligaPageComponent } from './components/laliga-page/laliga-page.component';
-import { BundesligaPageComponent } from './components/bundesliga-page/bundesliga-page.component';
-import { Ligue1PageComponent } from './components/ligue1-page/ligue1-page.component';
+import { LoginComponent } from './components/login/login.component';
+import { RegisterComponent } from './components/register/register.component';
+import { CampionatoPageComponent } from './components/campionato-page/campionato-page.component';
+import { PaginaSquadraComponent } from './components/pagina-squadra/pagina-squadra.component';
+import { PaginaMagliaComponent } from './components/pagina-maglia/pagina-maglia.component';
 
 const routes: Routes = [
+  //Components
   {path: '', component: HomeComponent },
-  {path: 'seriea', component: SerieaPageComponent },
-  {path: 'premierleague', component: PremierleaguePageComponent },
-  {path: 'liga', component: LaligaPageComponent },
-  {path: 'bundesliga', component: BundesligaPageComponent },
-  {path: 'ligue1', component: Ligue1PageComponent }
+  {path: 'campionato/:campionato', component: CampionatoPageComponent},
+  {path: ':campionato/:squadra', component: PaginaSquadraComponent},
+  {path: 'maglia/:id', component: PaginaMagliaComponent},
+  //login & register
+  {path: 'login', component: LoginComponent},
+  {path: 'signin', component: RegisterComponent}
 ];
 
 @NgModule({

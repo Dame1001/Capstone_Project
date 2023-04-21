@@ -1,0 +1,36 @@
+#sezione-campionato{
+  text-align: center;
+
+  h1 {
+    text-align: center;
+  }
+
+  img {
+    width: 5vw;
+  }
+
+  #sezione-squadre {
+    img {
+      width: 3vw;
+    }
+
+    .squadre {
+      background-color: rgba(230, 230, 230, 0.774);
+      width: 110px;
+      border-radius: 5%;
+      padding-top: 1%;
+      padding-bottom: -1%;
+    }
+
+    .nome {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .squadre:hover {
+      background-color: rgba(193, 193, 193, 0.774) ;
+    }
+  }
+
+}
